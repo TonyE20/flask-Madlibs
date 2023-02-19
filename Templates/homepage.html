@@ -1,0 +1,15 @@
+
+    {% extends 'base.html' %}
+    {% block title %} Warrior {% endblock %}
+    {% block content %}
+    <h1>Warrior</h1>
+
+    <form action="/story1">
+        {% for question in questions%}
+        <p>{{question}}:<input type="text" placeholder="" name= "{{question}}"> 
+        </p>
+        {% endfor %} 
+        <button>Submit</button>
+    </form>
+    {% endblock %}
+    
